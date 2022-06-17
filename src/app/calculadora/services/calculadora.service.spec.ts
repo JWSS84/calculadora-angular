@@ -41,7 +41,7 @@ describe('CalculadoraService', () => {
   }));
   it('deve retornar 0 se for operação inválida',
   inject ([CalculadoraService],(service: CalculadoraService) => {
-    let opInvalid = service.calcular(1,4, '%');
+    let opInvalid = service.calcular(1, 4, '%');
     expect(opInvalid).toEqual(0)
 
   }));
