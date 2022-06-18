@@ -47,7 +47,7 @@ export class CalculadoraComponent implements OnInit {
    */
   concatenarNumero(numAtual:string, numConcat: string): string {
     //caso contenha "0" ou null, reinicia o valor
-    if (numAtual ==='0' || null) {
+    if (numAtual ==='0' || numAtual === null) {
       numAtual = '';
     }
     // primeiro digito é '.', concatena '0' antes do ponto
@@ -63,7 +63,7 @@ export class CalculadoraComponent implements OnInit {
   }
 
   /**
-   * Executa a lógiac quando um operador for selecionado,
+   * Executa a lógica quando um operador for selecionado,
    * caso lá possua uma operação selecionada,
    * executa a operação anterior e define uma nova operação
    *
